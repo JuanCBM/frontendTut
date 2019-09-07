@@ -1,1 +1,24 @@
-<p>user works!</p>
+<h1>Usuarios registrados</h1>
+<div class="clear"></div>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Secondname</th>
+        <th>FirstSurname</th>
+        <th>SecondSurname</th>
+        <th>Phone</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let item of users">
+        <td>{{item.firstName}}</td>
+        <td>{{item.secondName}}</td>
+        <td>{{item.firstSurname}}</td>
+        <td>{{item.secondSurname}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.address}}</td>
+      </tr>
+    </tbody>
+  </table>

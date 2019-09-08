@@ -9,6 +9,8 @@
         <th>SecondSurname</th>
         <th>Phone</th>
         <th>Address</th>
+        <th>Acción</th>
+
       </tr>
     </thead>
     <tbody>
@@ -19,6 +21,12 @@
         <td>{{item.secondSurname}}</td>
         <td>{{item.phone}}</td>
         <td>{{item.address}}</td>
+        <td>
+          <img src="../../assets/pencil.png" height="20" width="20" (click) =edit(item); class="editIcon">
+          <img src="../../assets/delete.png" height="20" width="20" (click) =delete(item); class="editIcon">
+
+        </td>
+
       </tr>
     </tbody>
   </table>
